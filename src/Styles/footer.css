@@ -1,0 +1,25 @@
+                    
+
+.footer {
+        padding: 2rem 0;   
+        margin-top: 417px;              
+        background-color: #182334;
+        color: #fff;
+    }
+                          
+    @media only screen and (max-width: 600px) {
+        .footer{
+            padding: 2rem 0;                 
+        background-color: #182334;
+        color: #fff;
+            margin-top: 1134px;     
+        }
+
+    }
+    @media only screen and (min-width: 600px) and (max-width: 1150px) {
+        .footer{
+            margin-top: 1134px;  
+        }
+
+    }
+                        

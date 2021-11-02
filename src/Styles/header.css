@@ -1,0 +1,89 @@
+
+.header
+{
+    height: 50px;
+    background-color: red;
+}
+
+.header-logo
+{
+    text-align: center;
+    font-size: 31px;
+    color: red;
+    background: white;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    top: 13%;
+    margin-left: 1%;
+    font-family: Poppins;
+    font-weight: bold;
+    display: inline-block;
+
+}
+.user-login{
+    
+    float:right;
+    color: white;
+    margin-right: 23px;
+    margin-top: 7px;
+}
+.login{
+    display: inline-block;
+    margin-right: 10px;
+}
+.signup
+{
+    display: inline-block;
+    border: 1px solid white;
+    margin-right: 23px;
+    padding: 5px;
+    
+}
+
+.google-signup{
+    display: table;
+    background: #fff;
+    width: 400px;
+    color: #757575;
+    border-radius: 2px;
+    white-space: nowrap;
+    border: 1px solid #acacac;
+    margin-bottom: 7px; 
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Poppins;
+    margin-left: 8px;
+    
+}
+
+.facebook-signup{
+    display: table;
+    margin: 20px;
+    width: 400px;
+    height:50px ;
+    border-radius: 2px;
+    background-color: #5777b9;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: white;
+    font-family: Poppins;
+    white-space: nowrap;
+    margin-left: 8px;
+    padding-right: 170px;
+    
+}
+
+.text-center {
+    text-align: center;
+    font-size: 30px;
+}
+.input-login{
+    width: 400px;
+    height: 50px;
+    border-radius: 2px;
+    border: solid 1px #cacfd8;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    padding-left: 30px;
+}
