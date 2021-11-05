@@ -30,7 +30,7 @@ class Filter extends React.Component {
         };
         console.log("hi",filterObj);
         axios({
-            url: 'http://localhost:1508/filter',
+            url: 'https://limitless-headland-80936.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
@@ -45,7 +45,7 @@ class Filter extends React.Component {
             .catch()
             
         axios({
-            url: 'http://localhost:1508/locations',
+            url: 'https://limitless-headland-80936.herokuapp.com/locations',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -70,7 +70,7 @@ class Filter extends React.Component {
         };
 
         axios({
-            url: 'http://localhost:1508/filter',
+            url: 'https://limitless-headland-80936.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
@@ -101,7 +101,7 @@ class Filter extends React.Component {
         };
 
         axios({
-            url: 'http://localhost:1508/filter',
+            url: 'https://limitless-headland-80936.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
@@ -133,7 +133,7 @@ class Filter extends React.Component {
         };
 
         axios({
-            url: 'http://localhost:1508/filter',
+            url: 'https://limitless-headland-80936.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
@@ -173,7 +173,7 @@ class Filter extends React.Component {
         };
 
         axios({
-            url: 'http://localhost:1508/filter',
+            url: 'https://limitless-headland-80936.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
