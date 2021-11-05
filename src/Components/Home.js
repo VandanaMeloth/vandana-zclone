@@ -15,7 +15,7 @@ class Home extends React.Component {
     componentDidMount() {
         sessionStorage.clear();
         axios({
-            url: 'http://localhost:1508/locations',
+            url: 'https://limitless-headland-80936.herokuapp.com/locations',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -25,7 +25,7 @@ class Home extends React.Component {
             .catch()
 
         axios({
-            url: 'http://localhost:1508/mealtypes',
+            url: 'https://limitless-headland-80936.herokuapp.com/mealtypes',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
