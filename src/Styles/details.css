@@ -38,7 +38,7 @@
 
 .order-button {
     position: absolute;
-    top: 8%;
+    top: 11%;
     left: 84%;
 }
 
@@ -160,15 +160,5 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .button {
-    position: absolute;
-    left: 83%;
-    top: 51%;
-    width: 200px;
-    height: 35px;
-    opacity: 0.6;
-    border-radius: 3px;
-    background-color: red;
-    color: white;
-    }
+  
 }
