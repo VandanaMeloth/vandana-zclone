@@ -184,7 +184,7 @@ class Details extends React.Component {
                 <div>
                     <img src={`./${restaurant.image}`} alt="No Image, Sorry for the Inconvinience" width="388px" height="350px" />
 
-                    <button className="button" onClick={() => this.handleModal('galleryModalIsOpen', true)}>Click to see Image Gallery</button>
+                    <button className="btn-order" onClick={() => this.handleModal('galleryModalIsOpen', true)}>Click to see Image Gallery</button>
                 </div>
                 <div className="heading">{restaurant.name}</div>
                 <button className="btn-order" onClick={this.handleOrder}>Place Online Order</button>
