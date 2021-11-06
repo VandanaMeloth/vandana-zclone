@@ -16,7 +16,8 @@ const customStyles = {
         transform: 'translate(-50%, -50%)',
         backgroundColor: 'local',
         border: '1px solid brown',
-        height:'71%'
+        height:'71%',
+        width: '67%'
     },
 };
 
