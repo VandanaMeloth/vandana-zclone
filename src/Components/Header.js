@@ -32,20 +32,22 @@ class Header extends React.Component{
             loggedInUser:undefined,
             email:'',
             password:'',
+            firstName: undefined
         }
     }
 
     handleUserLogin = () => {
-        const { email, password } = this.state;
+        const { email, password,firstName } = this.state;
         
         const loginObj = {
             email: email,
-            password: password
+            password: password,
+           
         };
         console.log(loginObj);
         axios({
             method: 'POST',
-            url: 'https://limitless-headland-80936.herokuapp.com/login',
+            url: 'http://localhost:1508/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj,
             
@@ -65,7 +67,7 @@ class Header extends React.Component{
                     password: '',
                     
                 });
-                this.setState({isLoggedIn:true,isLoginModalIsOpen:false});
+                this.setState({isLoggedIn:true,isLoginModalIsOpen:false,loggedInUser:"Welcome"});
                 alert("Login Successfull !",{position:"top-center"});
                
             }
@@ -93,6 +95,10 @@ class Header extends React.Component{
         this.props.history.push('/');
     }
 
+    handleChange = (event, state) => {
+        this.setState({ [state]: event.target.value })
+    }
+
     componentClicked= (data)=>{
         console.warn(data);
     }
@@ -105,6 +111,7 @@ class Header extends React.Component{
     handleModal = (state, value) => {
         this.setState({ [state]: value });
     }
+    
     render(){
         const {isLoginModalIsOpen,isLoggedIn,loggedInUser,email,password}=this.state;
         return(
@@ -154,11 +161,11 @@ class Header extends React.Component{
                     <div class="f-16 col-xs-4 col-xs-offset-1 m-t-lg text-center fs-5" >OR</div>
 
                     <div>
-                        <input type="text"  placeholder="Email" required="Email required" className="input-login" ></input>
+                        <input type="text"  placeholder="Email" required="Email required" className="input-login" onChange={(event) => this.handleChange(event, 'email')} ></input>
                     </div>
                     
                     <div>
-                        <input type="password" placeholder="Password " required="Enter valid password" className="input-login" ></input>
+                        <input type="password" placeholder="Password " required="Enter valid password" className="input-login" onChange={(event) => this.handleChange(event, 'password')}></input>
                     </div>
 
                     <div className="d-grid gap-2 col-6 mx-auto" >

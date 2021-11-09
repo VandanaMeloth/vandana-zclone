@@ -19,7 +19,7 @@ class Wallpaper extends React.Component {
         console.log(sessionStorage);
 
         axios({
-            url: `https://limitless-headland-80936.herokuapp.com/restaurants/${locationId}`,
+            url: `http://localhost:1508/restaurants/${locationId}`,
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
