@@ -47,7 +47,7 @@ class Header extends React.Component{
         console.log(loginObj);
         axios({
             method: 'POST',
-            url: 'http://localhost:https://limitless-headland-80936.herokuapp.com/login',
+            url: 'https://limitless-headland-80936.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj,
             
