@@ -15,7 +15,7 @@ class Home extends React.Component {
     componentDidMount() {
         sessionStorage.clear();
         axios({
-            url: 'http://localhost:1508/locations',
+            url: 'http://localhost:https://limitless-headland-80936.herokuapp.com//locations',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
