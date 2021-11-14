@@ -30,7 +30,7 @@ class Filter extends React.Component {
         };
         console.log("hi",filterObj);
         axios({
-            url: 'http://localhost:1508/filter',
+            url: 'http://localhost:https://limitless-headland-80936.herokuapp.com/filter',
             headers: { 'Content-Type': 'application/json' },
             method: 'POST',
             data: filterObj
